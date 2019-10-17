@@ -4,15 +4,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/home">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="202dp"
+        android:layout_height="32dp"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="351dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="200dp"
+        android:layout_height="33dp"
+        tools:layout_editor_absoluteX="202dp"
+        tools:layout_editor_absoluteY="350dp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="274dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Searching"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="136dp"
+        android:layout_height="65dp"
+        android:background="@drawable/mebutton"
+        tools:layout_editor_absoluteX="274dp"
+        tools:layout_editor_absoluteY="666dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="136dp"
+        android:layout_height="65dp"
+        android:background="@drawable/taskbutton"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="666dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="138dp"
+        android:layout_height="65dp"
+        android:background="@drawable/runnerbutton"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="666dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="57dp"
+        android:layout_height="55dp"
+        android:background="@drawable/addtask"
+        tools:layout_editor_absoluteX="345dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="395dp"
+        android:layout_height="267dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="391dp">
+
+    </androidx.gridlayout.widget.GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

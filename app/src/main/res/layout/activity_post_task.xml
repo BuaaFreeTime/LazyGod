@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/post">
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="210dp"
+        android:layout_height="47dp"
+        android:background="@drawable/cancelbutton"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="684dp" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="206dp"
+        android:layout_height="47dp"
+        android:background="@drawable/postbutton"
+        tools:layout_editor_absoluteX="205dp"
+        tools:layout_editor_absoluteY="684dp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="40dp"
+        android:layout_height="40"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/backbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/addaphotobutton"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="78dp" />
+
+    <EditText
+        android:id="@+id/editText11"
+        android:layout_width="387dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Title"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="197dp" />
+
+    <EditText
+        android:id="@+id/editText12"
+        android:layout_width="384dp"
+        android:layout_height="118dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="Say something about your need..."
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="255dp" />
+
+    <EditText
+        android:id="@+id/editText13"
+        android:layout_width="97dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="amount"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="302dp"
+        tools:layout_editor_absoluteY="441dp" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="212dp"
+        android:layout_height="37dp"
+        tools:layout_editor_absoluteX="187dp"
+        tools:layout_editor_absoluteY="390dp" />
+
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="382dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Contact name"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="579dp" />
+
+    <EditText
+        android:id="@+id/editText14"
+        android:layout_width="384dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Contact number"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="625dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="342dp"
+        android:layout_height="26dp"
+        android:text="Address"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="547dp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="35dp"
+        android:layout_height="38dp"
+        android:background="@drawable/locationbutton"
+        tools:layout_editor_absoluteX="365dp"
+        tools:layout_editor_absoluteY="535dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
