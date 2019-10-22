@@ -1,70 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/linearLayout2"
-    android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/meedit">
 
-    <EditText
-        android:id="@+id/editText7"
-        android:layout_width="379dp"
-        android:layout_height="40dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="postgraduate"
-        android:textSize="14sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="421dp" />
 
-    <EditText
-        android:id="@+id/editText6"
-        android:layout_width="379dp"
-        android:layout_height="40dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="international"
-        android:textSize="14sp"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="354dp" />
-
-    <EditText
-        android:id="@+id/editText8"
-        android:layout_width="379dp"
-        android:layout_height="40dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="IT/ITM"
-        android:textSize="14sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="492dp" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="40dp"
-        android:layout_height="40"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/backbutton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="210dp"
-        android:layout_height="47dp"
-        android:background="@drawable/cancelbutton"
-        tools:layout_editor_absoluteX="-4dp"
-        tools:layout_editor_absoluteY="684dp" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="206dp"
-        android:layout_height="47dp"
-        android:background="@drawable/updatebutton"
-        tools:layout_editor_absoluteX="205dp"
-        tools:layout_editor_absoluteY="684dp" />
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="89dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="65dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/face"/>
 
     <EditText
         android:id="@+id/editText4"
@@ -74,8 +21,8 @@
         android:inputType="textPersonName"
         android:text="student name"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="213dp" />
+        android:layout_below="@id/imageButton"
+        android:layout_marginTop="50dp"/>
 
     <EditText
         android:id="@+id/editText5"
@@ -85,8 +32,41 @@
         android:inputType="textPersonName"
         android:text="xxxx@uni.sydeny.edu.au"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="280dp" />
+        android:layout_below="@id/editText4"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="379dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="international"
+        android:textSize="14sp"
+        android:layout_below="@id/editText5"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="379dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="postgraduate"
+        android:textSize="14sp"
+        android:layout_below="@id/editText6"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="379dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="IT/ITM"
+        android:textSize="14sp"
+        android:layout_below="@id/editText7"
+        android:layout_marginTop="30dp"/>
 
     <EditText
         android:id="@+id/editText9"
@@ -96,15 +76,9 @@
         android:inputType="textPersonName"
         android:text="2019"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="14dp"
-        tools:layout_editor_absoluteY="554dp" />
+        android:layout_below="@id/editText8"
+        android:layout_marginTop="30dp"/>
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="89dp"
-        android:layout_height="85dp"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="79dp"
-        tools:srcCompat="@tools:sample/avatars[0]" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
