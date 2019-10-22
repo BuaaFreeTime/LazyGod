@@ -19,16 +19,16 @@ public class MainActivity extends Activity {
     public void onAddItemClick(View view){
         int id = view.getId(); // 获取button的id
         switch (id){
-            case R.id.button2:
+            case R.id.btnRunner:
                 Toast.makeText(MainActivity.this,"you are already in runner", Toast.LENGTH_SHORT).show();
                 break;//已经在主界面只需提示
-            case R.id.button4:
+            case R.id.btnMe:
                 startActivity(new Intent(MainActivity.this,MeActivity.class));
                 break;// 点击me button 直接启动MeActivity并跳转至用户界面
-            case R.id.button:
+            case R.id.btnaddtask:
                 Toast.makeText(MainActivity.this,"not work", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.button3:
+            case R.id.btnTask:
                 Toast.makeText(MainActivity.this,"not work 1", Toast.LENGTH_SHORT).show();
                 break;
 

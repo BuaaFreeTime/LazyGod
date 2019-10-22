@@ -6,7 +6,7 @@
 
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/imageBtnFace"
         android:layout_width="89dp"
         android:layout_height="85dp"
         android:layout_marginTop="65dp"
@@ -14,70 +14,88 @@
         android:background="@drawable/face"/>
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/editTextName"
         android:layout_width="379dp"
         android:layout_height="40dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="student name"
         android:textSize="14sp"
-        android:layout_below="@id/imageButton"
+        android:layout_below="@id/imageBtnFace"
         android:layout_marginTop="50dp"/>
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/editTextEmail"
         android:layout_width="379dp"
         android:layout_height="40dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="xxxx@uni.sydeny.edu.au"
         android:textSize="14sp"
-        android:layout_below="@id/editText4"
+        android:layout_below="@id/editTextName"
         android:layout_marginTop="30dp"/>
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/editTextInternational"
         android:layout_width="379dp"
         android:layout_height="40dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="international"
         android:textSize="14sp"
-        android:layout_below="@id/editText5"
+        android:layout_below="@id/editTextEmail"
         android:layout_marginTop="30dp"/>
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/editTextDegree"
         android:layout_width="379dp"
         android:layout_height="40dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="postgraduate"
         android:textSize="14sp"
-        android:layout_below="@id/editText6"
+        android:layout_below="@id/editTextInternational"
         android:layout_marginTop="30dp"/>
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/editTextMajor"
         android:layout_width="379dp"
         android:layout_height="40dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="IT/ITM"
         android:textSize="14sp"
-        android:layout_below="@id/editText7"
+        android:layout_below="@id/editTextDegree"
         android:layout_marginTop="30dp"/>
 
     <EditText
-        android:id="@+id/editText9"
+        android:id="@+id/editTextYear"
         android:layout_width="380dp"
         android:layout_height="41dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="2019"
         android:textSize="14sp"
-        android:layout_below="@id/editText8"
+        android:layout_below="@id/editTextMajor"
         android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="202dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/cancelbutton"
+        android:onClick="onAddItemClick"/>
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="202dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/applybutton"
+        android:onClick="onAddItemClick"/>
 
 
 

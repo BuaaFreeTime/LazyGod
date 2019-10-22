@@ -11,7 +11,7 @@
         android:layout_width="202dp"
         android:layout_height="32dp"
         android:layout_alignParentLeft="true"
-        android:layout_below="@id/editText3"/>
+        android:layout_below="@id/editTextSearching"/>
 
 
 
@@ -20,10 +20,10 @@
         android:layout_width="200dp"
         android:layout_height="33dp"
         android:layout_alignParentRight="true"
-        android:layout_below="@id/editText3"/>
+        android:layout_below="@id/editTextSearching"/>
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/editTextSearching"
         android:layout_width="274dp"
         android:layout_height="39dp"
         android:ems="10"
@@ -34,7 +34,7 @@
         android:layout_marginTop="305dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnaddtask"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/addtask"
@@ -43,16 +43,16 @@
         android:onClick="onAddItemClick"/>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnTask"
         android:layout_width="136dp"
         android:layout_height="65dp"
         android:background="@drawable/taskbutton"
-        android:layout_toRightOf="@id/button2"
+        android:layout_toRightOf="@id/btnRunner"
         android:layout_alignParentBottom="true"
         android:onClick="onAddItemClick"/>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnRunner"
         android:layout_width="138dp"
         android:layout_height="65dp"
         android:background="@drawable/runnerbutton"
@@ -61,7 +61,7 @@
         android:onClick="onAddItemClick"/>
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnMe"
         android:layout_width="138dp"
         android:layout_height="65dp"
         android:background="@drawable/mebutton"

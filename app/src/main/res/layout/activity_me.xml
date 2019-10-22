@@ -6,36 +6,36 @@
 
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/imageBtnAddPhoto"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_below="@id/button34"
+        android:layout_below="@id/btnback"
         android:background="@drawable/addaphotobutton"
         android:layout_marginTop="9dp"
         android:layout_marginLeft="60dp" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textViewStudentname"
         android:layout_width="130dp"
         android:layout_height="33dp"
         android:layout_marginTop="9dp"
         android:text="Student name"
         android:textSize="24sp"
-        android:layout_toRightOf="@id/imageButton2"
-        android:layout_below="@id/button34"/>
+        android:layout_toRightOf="@id/imageBtnAddPhoto"
+        android:layout_below="@id/btnback"/>
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/textViewschool"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="9dp"
         android:text="The University of Sydney"
         android:textColor="@android:color/black"
-        android:layout_below="@id/textView5"
-        android:layout_toRightOf="@id/imageButton2"/>
+        android:layout_below="@id/textViewStudentname"
+        android:layout_toRightOf="@id/imageBtnAddPhoto"/>
 
     <Button
-        android:id="@+id/button34"
+        android:id="@+id/btnback"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/backbutton"
@@ -45,49 +45,49 @@
 
 
     <Button
-        android:id="@+id/button36"
+        android:id="@+id/btnWallet"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:background="@drawable/walletbutton"
         android:onClick="onAddItemClick"
-        android:layout_below="@id/imageButton2" />
+        android:layout_below="@id/imageBtnAddPhoto" />
 
     <Button
-        android:id="@+id/button35"
+        android:id="@+id/btnDraft"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:background="@drawable/draftsbutton"
         android:onClick="onAddItemClick"
-        android:layout_below="@id/imageButton2"
-        android:layout_toRightOf="@id/button36"/>
+        android:layout_below="@id/imageBtnAddPhoto"
+        android:layout_toRightOf="@id/btnWallet"/>
 
 
     <Button
-        android:id="@+id/button37"
+        android:id="@+id/btnLogout"
         android:layout_width="403dp"
         android:layout_height="40dp"
         android:onClick="onAddItemClick"
         android:background="@drawable/logoutbutton"
-        android:layout_below="@id/button39"/>
+        android:layout_below="@id/btnAbout"/>
 
     <Button
-        android:id="@+id/button39"
+        android:id="@+id/btnAbout"
         android:layout_width="403dp"
         android:layout_height="40dp"
         android:onClick="onAddItemClick"
         android:background="@drawable/aboutbutton"
-        android:layout_below="@id/button38"/>
+        android:layout_below="@id/btnFeedback"/>
 
     <Button
-        android:id="@+id/button38"
+        android:id="@+id/btnFeedback"
         android:layout_width="403dp"
         android:layout_height="40dp"
         android:onClick="onAddItemClick"
         android:background="@drawable/feedbackbutton"
-        android:layout_below="@id/button36"/>
+        android:layout_below="@id/btnWallet"/>
 
     <Button
-        android:id="@+id/button31"
+        android:id="@+id/btnRunner2"
         android:layout_width="125dp"
         android:layout_height="100dp"
         android:layout_alignParentBottom="true"
@@ -96,20 +96,20 @@
         android:onClick="onAddItemClick"/>
 
     <Button
-        android:id="@+id/button32"
+        android:id="@+id/btnTask2"
         android:layout_width="125dp"
         android:layout_height="100dp"
         android:onClick="onAddItemClick"
         android:background="@drawable/taskbutton"
-        android:layout_toRightOf="@id/button31"
+        android:layout_toRightOf="@id/btnRunner2"
         android:layout_alignParentBottom="true" />
 
     <Button
-        android:id="@+id/button33"
+        android:id="@+id/btnMe2"
         android:layout_width="125dp"
         android:layout_height="100dp"
         android:background="@drawable/mebutton2"
-        android:layout_toRightOf="@id/button32"
+        android:layout_toRightOf="@id/btnTask2"
         android:onClick="onAddItemClick"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"/>
