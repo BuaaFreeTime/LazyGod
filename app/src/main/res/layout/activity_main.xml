@@ -68,7 +68,6 @@
     <androidx.gridlayout.widget.GridLayout
         android:layout_width="408dp"
         android:layout_height="290dp"
-        android:layout_top="@id/button2"
         android:layout_below="@id/spinner1">
 
     </androidx.gridlayout.widget.GridLayout>
