@@ -12,18 +12,16 @@
         android:layout_width="210dp"
         android:layout_height="47dp"
         android:background="@drawable/cancelbutton"
-        tools:layout_editor_absoluteX="-4dp"
-        tools:layout_editor_absoluteY="684dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button11"
         android:layout_width="206dp"
         android:layout_height="47dp"
         android:background="@drawable/postbutton"
-        tools:layout_editor_absoluteX="205dp"
-        tools:layout_editor_absoluteY="684dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/button9"
@@ -39,96 +37,105 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/addaphotobutton"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="78dp"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="78dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/addaphotobutton" />
 
     <EditText
         android:id="@+id/editText11"
         android:layout_width="387dp"
         android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="197dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Title"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="197dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editText12"
         android:layout_width="384dp"
         android:layout_height="118dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="255dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:text="Say something about your need..."
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="255dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editText13"
         android:layout_width="97dp"
         android:layout_height="45dp"
+        android:layout_marginTop="441dp"
+        android:layout_marginEnd="12dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="amount"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="302dp"
-        tools:layout_editor_absoluteY="441dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
         android:id="@+id/spinner3"
         android:layout_width="212dp"
         android:layout_height="37dp"
-        tools:layout_editor_absoluteX="187dp"
-        tools:layout_editor_absoluteY="390dp"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginTop="390dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editText10"
         android:layout_width="382dp"
         android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="579dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Contact name"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="579dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editText14"
         android:layout_width="384dp"
         android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="625dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Contact number"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="625dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="342dp"
         android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="547dp"
         android:text="Address"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="547dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button8"
         android:layout_width="35dp"
         android:layout_height="38dp"
+        android:layout_marginTop="535dp"
+        android:layout_marginEnd="11dp"
         android:background="@drawable/locationbutton"
-        tools:layout_editor_absoluteX="365dp"
-        tools:layout_editor_absoluteY="535dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
