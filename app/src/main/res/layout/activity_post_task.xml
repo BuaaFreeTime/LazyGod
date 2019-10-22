@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/linearLayout3"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/post">
@@ -11,131 +10,181 @@
         android:id="@+id/button10"
         android:layout_width="210dp"
         android:layout_height="47dp"
-        android:background="@drawable/cancelbutton"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/cancelbutton" />
 
     <Button
         android:id="@+id/button11"
         android:layout_width="206dp"
         android:layout_height="47dp"
         android:background="@drawable/postbutton"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
 
     <Button
         android:id="@+id/button9"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="53dp"
+        android:layout_height="44dp"
+        android:layout_alignParentLeft="true"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/backbutton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="3dp"
+        android:background="@drawable/backbutton" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="78dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/addaphotobutton" />
+        android:layout_below="@+id/button9"
+        android:layout_marginTop="2dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/addaphotobutton"
+         />
 
     <EditText
         android:id="@+id/editText11"
-        android:layout_width="387dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="197dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Title"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:hint="Title"
+        android:textSize="14sp" />
 
     <EditText
         android:id="@+id/editText12"
-        android:layout_width="384dp"
-        android:layout_height="118dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="255dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/editText11"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="15dp"
+        android:background="#FFFFFF"
         android:ems="10"
         android:gravity="start|top"
+        android:hint="Say something about your need..."
         android:inputType="textMultiLine"
-        android:text="Say something about your need..."
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="14sp" />
 
-    <EditText
-        android:id="@+id/editText13"
-        android:layout_width="97dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="441dp"
-        android:layout_marginEnd="12dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="amount"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/editText12"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:background="#FFFFFF"
+        android:text="Category"
+        android:textColor="#FDC5C3C3"
+        android:textSize="20sp" />
 
     <Spinner
         android:id="@+id/spinner3"
         android:layout_width="212dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="390dp"
-        android:layout_marginEnd="12dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="30dp"
+        android:layout_below="@+id/editText12"
+        android:layout_marginTop="15dp"
+        android:layout_alignRight="@+id/textView10"
+        />
+
+
 
     <EditText
         android:id="@+id/editText10"
-        android:layout_width="382dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="579dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Contact name"
+        android:hint="Contact name"
         android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_below="@+id/editText15"
+        android:layout_marginTop="2dp"
+        android:background="#FFFFFF"
+        />
 
     <EditText
         android:id="@+id/editText14"
-        android:layout_width="384dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="625dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/editText10"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="15dp"
+        android:background="#FFFFFF"
         android:ems="10"
+        android:hint="Contact number"
         android:inputType="textPersonName"
-        android:text="Contact number"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="14sp" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="342dp"
-        android:layout_height="26dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="547dp"
-        android:text="Address"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textView10"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Reward              | AUD ($)"
+        android:textColor="#FDC5C3C3"
+        android:textSize="20sp"
+        android:background="#FFFFFF"
+        />
+
+    <EditText
+        android:id="@+id/editText13"
+        android:layout_width="97dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Amount"
+        android:textSize="20sp"
+        android:layout_below="@+id/textView10"
+        android:layout_marginTop="5dp"
+        android:layout_alignRight="@+id/textView12"
+        android:background="#FFFFFF"
+        />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/textView12"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Location&amp;Contact"
+        android:textColor="#FDC5C3C3"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editText15"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:hint="Address"
+        android:layout_below="@+id/textView11"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+         />
 
     <Button
         android:id="@+id/button8"
         android:layout_width="35dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="535dp"
-        android:layout_marginEnd="11dp"
+        android:layout_height="30dp"
         android:background="@drawable/locationbutton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_above="@+id/editText10"
+        android:layout_marginBottom="2dp"
+        android:layout_alignRight="@+id/editText15"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>

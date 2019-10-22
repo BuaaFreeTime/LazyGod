@@ -1,77 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/linearLayout"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/signin">
 
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="305dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:shadowColor="#00FFFFFF"
+        android:textColor="@android:color/black"
+        android:hint="Student email/Unikey"
+        android:layout_above="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/signintext"
+         />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="301dp"
+        android:layout_height="51dp"
+        android:layout_above="@+id/buttonsignin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/signintext"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+
+    //我觉得这个忘记密码应该删掉
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="335dp"
-        android:layout_height="21dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="610dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Forgot My Password?"
-        android:textAlignment="textEnd"
         android:textColor="@android:color/black"
         android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.28"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_above="@+id/buttonsignin"
+        android:layout_marginBottom="3dp"
+        android:layout_centerHorizontal="true"
+        />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="0dp"
+
+    <Button
+        android:id="@+id/buttonsignin"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="641dp"
         android:text="SIGN IN"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="24sp"
-        android:typeface="normal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/textView4"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="701dp"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_centerHorizontal="true"
         android:text="Terms Conditions | Privacy Policy"
-        android:textAlignment="center"
         android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentBottom="true"
+        />
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="307dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginBottom="196dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:shadowColor="#00FFFFFF"
-        android:text="Student email"
-        android:textColor="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="305dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginBottom="128dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
