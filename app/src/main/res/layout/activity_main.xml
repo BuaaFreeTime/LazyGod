@@ -39,7 +39,8 @@
         android:layout_height="wrap_content"
         android:background="@drawable/addtask"
         android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"/>
+        android:layout_alignParentTop="true"
+        android:onClick="onAddItemClick"/>
 
     <Button
         android:id="@+id/button3"
@@ -47,7 +48,8 @@
         android:layout_height="65dp"
         android:background="@drawable/taskbutton"
         android:layout_toRightOf="@id/button2"
-        android:layout_alignParentBottom="true"  />
+        android:layout_alignParentBottom="true"
+        android:onClick="onAddItemClick"/>
 
     <Button
         android:id="@+id/button2"
@@ -55,7 +57,8 @@
         android:layout_height="65dp"
         android:background="@drawable/runnerbutton"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"/>
+        android:layout_alignParentLeft="true"
+        android:onClick="onAddItemClick"/>
 
     <Button
         android:id="@+id/button4"
@@ -63,7 +66,8 @@
         android:layout_height="65dp"
         android:background="@drawable/mebutton"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"/>
+        android:layout_alignParentRight="true"
+        android:onClick="onAddItemClick"/>
 
     <androidx.gridlayout.widget.GridLayout
         android:layout_width="408dp"
