@@ -13,7 +13,8 @@
         android:layout_height="47dp"
         android:background="@drawable/cancelbutton"
         tools:layout_editor_absoluteX="-4dp"
-        tools:layout_editor_absoluteY="684dp" />
+        tools:layout_editor_absoluteY="684dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button11"
@@ -21,12 +22,13 @@
         android:layout_height="47dp"
         android:background="@drawable/postbutton"
         tools:layout_editor_absoluteX="205dp"
-        tools:layout_editor_absoluteY="684dp" />
+        tools:layout_editor_absoluteY="684dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button9"
         android:layout_width="40dp"
-        android:layout_height="40"
+        android:layout_height="40dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/backbutton"
@@ -39,7 +41,8 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/addaphotobutton"
         tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="78dp" />
+        tools:layout_editor_absoluteY="78dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editText11"
@@ -50,7 +53,8 @@
         android:text="Title"
         android:textSize="14sp"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="197dp" />
+        tools:layout_editor_absoluteY="197dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editText12"
@@ -62,7 +66,8 @@
         android:text="Say something about your need..."
         android:textSize="14sp"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="255dp" />
+        tools:layout_editor_absoluteY="255dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editText13"
@@ -73,14 +78,16 @@
         android:text="amount"
         android:textSize="14sp"
         tools:layout_editor_absoluteX="302dp"
-        tools:layout_editor_absoluteY="441dp" />
+        tools:layout_editor_absoluteY="441dp"
+        tools:ignore="MissingConstraints" />
 
     <Spinner
         android:id="@+id/spinner3"
         android:layout_width="212dp"
         android:layout_height="37dp"
         tools:layout_editor_absoluteX="187dp"
-        tools:layout_editor_absoluteY="390dp" />
+        tools:layout_editor_absoluteY="390dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editText10"
@@ -91,7 +98,8 @@
         android:text="Contact name"
         android:textSize="14sp"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="579dp" />
+        tools:layout_editor_absoluteY="579dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editText14"
@@ -102,7 +110,8 @@
         android:text="Contact number"
         android:textSize="14sp"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="625dp" />
+        tools:layout_editor_absoluteY="625dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView"
@@ -110,7 +119,8 @@
         android:layout_height="26dp"
         android:text="Address"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="547dp" />
+        tools:layout_editor_absoluteY="547dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button8"
@@ -118,6 +128,7 @@
         android:layout_height="38dp"
         android:background="@drawable/locationbutton"
         tools:layout_editor_absoluteX="365dp"
-        tools:layout_editor_absoluteY="535dp" />
+        tools:layout_editor_absoluteY="535dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

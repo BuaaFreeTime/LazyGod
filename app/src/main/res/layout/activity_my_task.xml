@@ -14,7 +14,8 @@
         android:layout_height="65dp"
         android:background="@drawable/runnerbutton2"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="666dp" />
+        tools:layout_editor_absoluteY="666dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button18"
@@ -22,7 +23,8 @@
         android:layout_height="65dp"
         android:background="@drawable/taskbutton2"
         tools:layout_editor_absoluteX="138dp"
-        tools:layout_editor_absoluteY="666dp" />
+        tools:layout_editor_absoluteY="666dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button19"
@@ -30,12 +32,13 @@
         android:layout_height="65dp"
         android:background="@drawable/mebutton"
         tools:layout_editor_absoluteX="274dp"
-        tools:layout_editor_absoluteY="666dp" />
+        tools:layout_editor_absoluteY="666dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button14"
         android:layout_width="40dp"
-        android:layout_height="40"
+        android:layout_height="40dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/backbutton"
@@ -48,7 +51,8 @@
         android:layout_height="45dp"
         android:background="@drawable/addtask"
         tools:layout_editor_absoluteX="366dp"
-        tools:layout_editor_absoluteY="11dp" />
+        tools:layout_editor_absoluteY="11dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button15"
@@ -56,7 +60,8 @@
         android:layout_height="65dp"
         android:background="@drawable/sentbutton"
         tools:layout_editor_absoluteX="209dp"
-        tools:layout_editor_absoluteY="63dp" />
+        tools:layout_editor_absoluteY="63dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button16"
@@ -64,13 +69,15 @@
         android:layout_height="65dp"
         android:background="@drawable/appliedbutton"
         tools:layout_editor_absoluteX="-3dp"
-        tools:layout_editor_absoluteY="63dp" />
+        tools:layout_editor_absoluteY="63dp"
+        tools:ignore="MissingConstraints" />
 
     <androidx.gridlayout.widget.GridLayout
         android:layout_width="395dp"
         android:layout_height="522dp"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="136dp">
+        tools:layout_editor_absoluteY="136dp"
+        tools:ignore="MissingConstraints">
 
     </androidx.gridlayout.widget.GridLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

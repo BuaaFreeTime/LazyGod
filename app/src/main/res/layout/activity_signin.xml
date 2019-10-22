@@ -18,7 +18,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.28"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="610dp" />
+        tools:layout_editor_absoluteY="610dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView3"
@@ -32,7 +33,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="641dp" />
+        tools:layout_editor_absoluteY="641dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView4"
@@ -44,7 +46,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="701dp" />
+        tools:layout_editor_absoluteY="701dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editText"
@@ -56,7 +59,8 @@
         android:text="Student email"
         android:textColor="@android:color/black"
         tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="487dp" />
+        tools:layout_editor_absoluteY="487dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editText2"
@@ -65,5 +69,6 @@
         android:ems="10"
         android:inputType="textPassword"
         tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="560dp" />
+        tools:layout_editor_absoluteY="560dp"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
