@@ -11,6 +11,8 @@
         android:id="@+id/textView2"
         android:layout_width="335dp"
         android:layout_height="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="610dp"
         android:text="Forgot My Password?"
         android:textAlignment="textEnd"
         android:textColor="@android:color/black"
@@ -18,13 +20,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.28"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="610dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="641dp"
         android:text="SIGN IN"
         android:textAlignment="center"
         android:textColor="@android:color/black"
@@ -33,42 +35,43 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="641dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="701dp"
         android:text="Terms Conditions | Privacy Policy"
         android:textAlignment="center"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="701dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="307dp"
         android:layout_height="48dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginBottom="196dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:shadowColor="#00FFFFFF"
         android:text="Student email"
         android:textColor="@android:color/black"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="487dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="305dp"
         android:layout_height="43dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginBottom="128dp"
         android:ems="10"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="560dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,27 +13,26 @@
         android:layout_width="138dp"
         android:layout_height="65dp"
         android:background="@drawable/runnerbutton2"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="666dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button18"
         android:layout_width="136dp"
         android:layout_height="65dp"
+        android:layout_marginStart="138dp"
         android:background="@drawable/taskbutton2"
-        tools:layout_editor_absoluteX="138dp"
-        tools:layout_editor_absoluteY="666dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button19"
         android:layout_width="136dp"
         android:layout_height="65dp"
+        android:layout_marginEnd="1dp"
         android:background="@drawable/mebutton"
-        tools:layout_editor_absoluteX="274dp"
-        tools:layout_editor_absoluteY="666dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/button14"
@@ -49,35 +48,37 @@
         android:id="@+id/button13"
         android:layout_width="45dp"
         android:layout_height="45dp"
+        android:layout_marginTop="11dp"
         android:background="@drawable/addtask"
-        tools:layout_editor_absoluteX="366dp"
-        tools:layout_editor_absoluteY="11dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button15"
         android:layout_width="201dp"
         android:layout_height="65dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="1dp"
         android:background="@drawable/sentbutton"
-        tools:layout_editor_absoluteX="209dp"
-        tools:layout_editor_absoluteY="63dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button16"
         android:layout_width="209dp"
         android:layout_height="65dp"
+        android:layout_marginTop="63dp"
         android:background="@drawable/appliedbutton"
-        tools:layout_editor_absoluteX="-3dp"
-        tools:layout_editor_absoluteY="63dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.gridlayout.widget.GridLayout
         android:layout_width="395dp"
         android:layout_height="522dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="136dp"
-        tools:ignore="MissingConstraints">
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="136dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
     </androidx.gridlayout.widget.GridLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
