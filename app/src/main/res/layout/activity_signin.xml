@@ -8,7 +8,7 @@
 
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/signin_email"
         android:layout_width="305dp"
         android:layout_height="45dp"
         android:ems="10"
@@ -16,16 +16,16 @@
         android:shadowColor="#00FFFFFF"
         android:textColor="@android:color/black"
         android:hint="Student email/Unikey"
-        android:layout_above="@+id/editText2"
+        android:layout_above="@+id/signin_password"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
         android:background="@drawable/signintext"
          />
 
     <EditText
-        android:id="@+id/editText2"
-        android:layout_width="301dp"
-        android:layout_height="51dp"
+        android:id="@+id/signin_password"
+        android:layout_width="305dp"
+        android:layout_height="45dp"
         android:layout_above="@+id/buttonsignin"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
@@ -37,7 +37,7 @@
 
     //我觉得这个忘记密码应该删掉
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/signin_forget"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Forgot My Password?"
@@ -58,13 +58,14 @@
         android:textColor="@android:color/black"
         android:textSize="24sp"
         android:layout_centerHorizontal="true"
-        android:layout_above="@+id/textView4"
+        android:layout_above="@+id/signin_bottom"
         android:layout_marginBottom="10dp"
         android:background="#FFFFFF"
+        android:onClick="onSubmit"
         />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/signin_bottom"
         android:layout_width="wrap_content"
         android:layout_height="15dp"
         android:layout_centerHorizontal="true"

@@ -8,7 +8,7 @@
     >
 
     <Button
-        android:id="@+id/button42"
+        android:id="@+id/btnApply_Cancle"
 
         android:layout_width="210dp"
         android:layout_height="47dp"
@@ -17,7 +17,7 @@
         android:layout_alignParentLeft="true" />
 
     <Button
-        android:id="@+id/button43"
+        android:id="@+id/btnApply_Apply"
         android:layout_width="206dp"
         android:layout_height="47dp"
         android:background="@drawable/applybutton"
