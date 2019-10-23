@@ -7,7 +7,7 @@
     >
 
     <Button
-        android:id="@+id/btnRunner"
+        android:id="@+id/btnSent_Runner"
         android:layout_width="138dp"
         android:layout_height="65dp"
         android:background="@drawable/runnerbutton2"
@@ -16,15 +16,15 @@
         />
 
     <Button
-        android:id="@+id/btnTask"
+        android:id="@+id/btnSent_Task"
         android:layout_width="136dp"
         android:layout_height="65dp"
         android:background="@drawable/taskbutton2"
-        android:layout_toRightOf="@id/btnRunner"
+        android:layout_toRightOf="@+id/btnSent_Runner"
         android:layout_alignParentBottom="true" />
 
     <Button
-        android:id="@+id/btnMe"
+        android:id="@+id/btnSent_Me"
         android:layout_width="136dp"
         android:layout_height="65dp"
         android:background="@drawable/mebutton"
@@ -32,7 +32,7 @@
         android:layout_alignParentRight="true" />
 
     <Button
-        android:id="@+id/btnTask_back"
+        android:id="@+id/btnSent_back"
         android:layout_width="53dp"
         android:layout_height="44dp"
         android:layout_alignParentLeft="true"
@@ -41,7 +41,7 @@
         android:background="@drawable/backbutton" />
 
     <Button
-        android:id="@+id/btnaddtask"
+        android:id="@+id/btnSent_addtask"
         android:layout_width="45dp"
         android:layout_height="44dp"
         android:background="@drawable/addtask"
@@ -50,28 +50,28 @@
         />
 
     <Button
-        android:id="@+id/btnSent"
+        android:id="@+id/btnSent_Sent"
         android:layout_width="201dp"
         android:layout_height="65dp"
         android:background="@drawable/sentbutton"
         android:layout_alignParentRight="true"
-        android:layout_below="@id/btnaddtask"
-        android:layout_toRightOf="@+id/btnApplied"
+        android:layout_below="@id/btnSent_addtask"
+        android:layout_toRightOf="@+id/btnSent_Applied"
         />
 
     <Button
-        android:id="@+id/btnApplied"
+        android:id="@+id/btnSent_Applied"
         android:layout_width="209dp"
         android:layout_height="65dp"
         android:background="@drawable/appliedbutton"
         android:layout_alignParentLeft="true"
-        android:layout_below="@id/btnTask_back"
+        android:layout_below="@id/btnSent_back"
         />
 
     <androidx.gridlayout.widget.GridLayout
         android:layout_width="match_parent"
         android:layout_height="537dp"
-        android:layout_below="@id/btnApplied"
-        android:layout_above="@id/btnRunner">
+        android:layout_below="@id/btnSent_Applied"
+        android:layout_above="@+id/btnSent_Runner">
     </androidx.gridlayout.widget.GridLayout>
 </RelativeLayout>
