@@ -7,6 +7,21 @@
     android:background="@drawable/task"
     >
 
+    <ImageView
+        android:id="@+id/imageViewTask"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/textViewTask"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewTask"/>
+
+
+
     <Button
         android:id="@+id/btnFinish_Cancle"
 
