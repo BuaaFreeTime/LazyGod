@@ -2,87 +2,106 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/meedit">
+    >
 
+
+    <TextView
+        android:id="@+id/meedit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/meedit"
+        android:ems="10"
+        />
+
+    <TextView
+        android:id="@+id/me_bakground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/me_background"
+        android:ems="10"
+        android:layout_below="@+id/meedit"
+        />
 
     <ImageButton
         android:id="@+id/imageBtnFace"
         android:layout_width="89dp"
         android:layout_height="85dp"
-        android:layout_marginTop="65dp"
+        android:layout_below="@+id/meedit"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/face"/>
+        android:background="@drawable/face"
+        android:layout_marginTop="5dp"
+        />
 
     <EditText
         android:id="@+id/editTextName"
-        android:layout_width="379dp"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="student name"
+        android:hint="Name"
         android:textSize="14sp"
         android:layout_below="@id/imageBtnFace"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="30dp"/>
 
     <EditText
         android:id="@+id/editTextEmail"
-        android:layout_width="379dp"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="xxxx@uni.sydeny.edu.au"
+        android:hint="Confirmed Email"
         android:textSize="14sp"
         android:layout_below="@id/editTextName"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="20dp"/>
 
     <EditText
         android:id="@+id/editTextInternational"
-        android:layout_width="379dp"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="international"
+        android:hint="Student type"
         android:textSize="14sp"
         android:layout_below="@id/editTextEmail"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="20dp"/>
 
     <EditText
         android:id="@+id/editTextDegree"
-        android:layout_width="379dp"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="postgraduate"
+        android:hint="Study degree"
         android:textSize="14sp"
         android:layout_below="@id/editTextInternational"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="20dp"/>
 
     <EditText
         android:id="@+id/editTextMajor"
-        android:layout_width="379dp"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="IT/ITM"
+        android:hint="Course"
         android:textSize="14sp"
         android:layout_below="@id/editTextDegree"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="20dp"/>
 
     <EditText
         android:id="@+id/editTextYear"
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="41dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="2019"
+        android:hint="Year started studying"
         android:textSize="14sp"
         android:layout_below="@id/editTextMajor"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="20dp"/>
 
     <Button
         android:id="@+id/btnCancel"
-        android:layout_width="202dp"
-        android:layout_height="100dp"
+        android:layout_width="204dp"
+        android:layout_height="47dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
         android:background="@drawable/cancelbutton"
@@ -91,9 +110,10 @@
     <Button
         android:id="@+id/btnApply"
         android:layout_width="202dp"
-        android:layout_height="100dp"
+        android:layout_height="47dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btnCancel"
         android:background="@drawable/applybutton"
         android:onClick="onAddItemClick"/>
 

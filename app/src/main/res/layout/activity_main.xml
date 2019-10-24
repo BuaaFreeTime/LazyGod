@@ -3,9 +3,38 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/home">
+    >
 
 
+    <TextView
+        android:id="@+id/main_home"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/home"
+        android:ems="10"
+        />
+
+    <TextView
+        android:id="@+id/main_searching"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:background="@drawable/home_searching"
+        android:ems="10"
+        android:layout_marginTop="265dp"
+        android:layout_toLeftOf="@+id/editTextSearching"
+        />
+
+    <EditText
+        android:id="@+id/editTextSearching"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="265dp"
+        android:background="@drawable/home_searchingtext"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Searching"
+        android:textColor="@android:color/white" />
     <Spinner
         android:id="@+id/spinner1"
         android:layout_width="202dp"
@@ -22,16 +51,6 @@
         android:layout_alignParentRight="true"
         android:layout_below="@id/editTextSearching"/>
 
-    <EditText
-        android:id="@+id/editTextSearching"
-        android:layout_width="274dp"
-        android:layout_height="39dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Searching"
-        android:textColor="@android:color/white"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="305dp" />
 
     <Button
         android:id="@+id/btnaddtask"
@@ -55,10 +74,11 @@
         android:id="@+id/btnRunner"
         android:layout_width="138dp"
         android:layout_height="65dp"
-        android:background="@drawable/runnerbutton"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:onClick="onAddItemClick"/>
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/runnerbutton"
+        android:onClick="onAddItemClick" />
 
     <Button
         android:id="@+id/btnMe"
@@ -72,8 +92,9 @@
     <GridView
         android:id="@+id/gvTask"
         android:layout_width="408dp"
-        android:layout_height="290dp"
+        android:layout_height="wrap_content"
         android:layout_below="@id/spinner1"
+        android:layout_above="@+id/btnRunner"
         android:numColumns="auto_fit"
         android:columnWidth="80dp"
         android:horizontalSpacing="10dp"

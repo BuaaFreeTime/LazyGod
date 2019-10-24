@@ -8,7 +8,7 @@
 
     <Button
         android:id="@+id/btnSent_Runner"
-        android:layout_width="138dp"
+        android:layout_width="136dp"
         android:layout_height="65dp"
         android:background="@drawable/runnerbutton2"
         android:layout_alignParentBottom="true"
