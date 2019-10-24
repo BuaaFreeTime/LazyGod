@@ -13,6 +13,7 @@
         android:background="@drawable/runnerbutton2"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
+        android:onClick="onAddItemClick"
         />
 
     <Button
@@ -21,7 +22,8 @@
         android:layout_height="65dp"
         android:background="@drawable/taskbutton2"
         android:layout_toRightOf="@+id/btnSent_Runner"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignParentBottom="true"
+        android:onClick="onAddItemClick"/>
 
     <Button
         android:id="@+id/btnSent_Me"
@@ -29,7 +31,8 @@
         android:layout_height="65dp"
         android:background="@drawable/mebutton"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true" />
+        android:layout_alignParentRight="true"
+        android:onClick="onAddItemClick"/>
 
     <Button
         android:id="@+id/btnSent_back"
@@ -38,7 +41,8 @@
         android:layout_alignParentLeft="true"
         android:layout_marginStart="4dp"
         android:layout_marginTop="3dp"
-        android:background="@drawable/backbutton" />
+        android:background="@drawable/backbutton"
+        android:onClick="onAddItemClick"/>
 
     <Button
         android:id="@+id/btnSent_addtask"
@@ -47,6 +51,7 @@
         android:background="@drawable/addtask"
         android:layout_alignParentRight="true"
         android:layout_marginTop="3dp"
+        android:onClick="onAddItemClick"
         />
 
     <Button
@@ -57,6 +62,7 @@
         android:layout_alignParentRight="true"
         android:layout_below="@id/btnSent_addtask"
         android:layout_toRightOf="@+id/btnSent_Applied"
+        android:onClick="onAddItemClick"
         />
 
     <Button
@@ -66,6 +72,7 @@
         android:background="@drawable/appliedbutton"
         android:layout_alignParentLeft="true"
         android:layout_below="@id/btnSent_back"
+        android:onClick="onAddItemClick"
         />
 
     <androidx.gridlayout.widget.GridLayout

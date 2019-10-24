@@ -14,7 +14,8 @@
         android:layout_height="47dp"
         android:background="@drawable/cancelbutton"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentLeft="true"
+        android:onClick="onAddItemClick"/>
 
     <Button
         android:id="@+id/btnFinish_Finish"
@@ -22,6 +23,7 @@
         android:layout_height="47dp"
         android:background="@drawable/finishbutton"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true" />
+        android:layout_alignParentRight="true"
+        android:onClick="onAddItemClick"/>
 
 </RelativeLayout>
