@@ -69,12 +69,16 @@
         android:layout_alignParentRight="true"
         android:onClick="onAddItemClick"/>
 
-    <androidx.gridlayout.widget.GridLayout
+    <GridView
+        android:id="@+id/gvTask"
         android:layout_width="408dp"
         android:layout_height="290dp"
-        android:layout_below="@id/spinner1">
-
-    </androidx.gridlayout.widget.GridLayout>
+        android:layout_below="@id/spinner1"
+        android:numColumns="auto_fit"
+        android:columnWidth="80dp"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp">
+    </GridView>
 
 
 
