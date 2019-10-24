@@ -28,7 +28,7 @@
         android:layout_height="45dp"
         android:layout_above="@+id/buttonsignin"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="25dp"
         android:background="@drawable/signintext"
         android:ems="10"
         android:hint="Password"
@@ -36,16 +36,17 @@
 
 
 
-    <TextView
-        android:id="@+id/signin_forget"
+    <Button
+        android:id="@+id/signin_signup"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Forgot My Password/Sign up"
+        android:layout_height="15dp"
+        android:text="Sign up"
         android:textColor="@android:color/black"
         android:textSize="10sp"
         android:layout_above="@+id/buttonsignin"
-        android:layout_marginBottom="3dp"
+        android:layout_marginBottom="5dp"
         android:layout_centerHorizontal="true"
+        android:background="#FFFFFF"
         />
 
 

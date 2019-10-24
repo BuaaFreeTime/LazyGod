@@ -54,12 +54,12 @@
 
     <Button
         android:id="@+id/btnaddtask"
-        android:layout_width="wrap_content"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/addtask"
-        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:onClick="onAddItemClick"/>
+        android:layout_alignParentRight="true"
+        android:background="@drawable/addtask"
+        android:onClick="onAddItemClick" />
 
     <Button
         android:id="@+id/btnTask"
