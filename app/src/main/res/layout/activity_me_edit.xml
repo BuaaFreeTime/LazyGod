@@ -41,7 +41,9 @@
         android:hint="Name"
         android:textSize="14sp"
         android:layout_below="@id/imageBtnFace"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="30dp"
+        android:background="#FFFFFF"
+        />
 
     <EditText
         android:id="@+id/editTextEmail"
@@ -52,7 +54,9 @@
         android:hint="Confirmed Email"
         android:textSize="14sp"
         android:layout_below="@id/editTextName"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        />
 
     <EditText
         android:id="@+id/editTextInternational"
@@ -63,7 +67,9 @@
         android:hint="Student type"
         android:textSize="14sp"
         android:layout_below="@id/editTextEmail"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        />
 
     <EditText
         android:id="@+id/editTextDegree"
@@ -74,7 +80,9 @@
         android:hint="Study degree"
         android:textSize="14sp"
         android:layout_below="@id/editTextInternational"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        />
 
     <EditText
         android:id="@+id/editTextMajor"
@@ -85,7 +93,9 @@
         android:hint="Course"
         android:textSize="14sp"
         android:layout_below="@id/editTextDegree"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        />
 
     <EditText
         android:id="@+id/editTextYear"
@@ -96,7 +106,9 @@
         android:hint="Year started studying"
         android:textSize="14sp"
         android:layout_below="@id/editTextMajor"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        />
 
     <Button
         android:id="@+id/btnCancel"
