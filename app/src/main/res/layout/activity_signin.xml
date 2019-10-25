@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/signin">
+    android:background="@drawable/newsignin">
 
 
     <EditText
@@ -16,38 +16,45 @@
         android:shadowColor="#00FFFFFF"
         android:textColor="@android:color/black"
         android:hint="Student email/Unikey"
-        android:layout_above="@+id/signin_password"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
         android:background="@drawable/signintext"
+        android:layout_marginTop="480dp"
          />
 
     <EditText
         android:id="@+id/signin_password"
         android:layout_width="305dp"
         android:layout_height="45dp"
-        android:layout_above="@+id/signUp"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="25dp"
         android:background="@drawable/signintext"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPassword" />
-
+        android:inputType="textPassword"
+        android:layout_marginTop="550dp"
+        />
 
 
     <Button
-        android:id="@+id/signUp"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnForgot"
+        android:layout_width="130dp"
         android:layout_height="15dp"
-        android:text="Sign up"
+        android:onClick="onClick"
+        android:layout_marginTop="612dp"
+        android:layout_marginLeft="50dp"/>》
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="150dp"
+        android:layout_height="15dp"
+        android:text="No account? Sign up!"
         android:textColor="@android:color/black"
         android:textSize="10sp"
-        android:layout_above="@+id/signIn"
-        android:layout_marginBottom="5dp"
-        android:layout_centerHorizontal="true"
         android:background="#FFFFFF"
         android:onClick="onClick"
+        android:layout_marginTop="612dp"
+        android:layout_marginLeft="200dp"
         />
 
 
@@ -60,8 +67,7 @@
         android:textColor="@android:color/black"
         android:textSize="24sp"
         android:layout_centerHorizontal="true"
-        android:layout_above="@+id/signin_bottom"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="630dp"
         android:background="#FFFFFF"
         android:onClick="onClick"
 
@@ -69,12 +75,11 @@
 
     <TextView
         android:id="@+id/signin_bottom"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="15dp"
-        android:layout_centerHorizontal="true"
-        android:text="Terms Conditions | Privacy Policy"
         android:textSize="10sp"
-        android:layout_alignParentBottom="true"
+        android:layout_marginTop="687dp"
+        android:layout_marginLeft="100dp"
         />
 
 </RelativeLayout>
