@@ -13,33 +13,7 @@
         android:background="@drawable/home"
         android:ems="10"
         />
-
-
-
-    <EditText
-        android:id="@+id/editTextSearching"
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="265dp"
-        />
-
-    <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="202dp"
-        android:layout_height="32dp"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@id/editTextSearching"/>
-
-
-
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="200dp"
-        android:layout_height="33dp"
-        android:layout_alignParentRight="true"
-        android:layout_below="@id/editTextSearching"/>
-
+    
 
     <Button
         android:id="@+id/btnaddtask"
@@ -82,7 +56,7 @@
         android:id="@+id/gvTask"
         android:layout_width="408dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/spinner1"
+        android:layout_below="@id/main_home"
         android:layout_above="@+id/btnRunner"
         android:numColumns="2"
         android:columnWidth="80dp"
