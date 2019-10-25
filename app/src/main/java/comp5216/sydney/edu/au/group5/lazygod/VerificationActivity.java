@@ -20,9 +20,7 @@ public class VerificationActivity extends Activity {
 
     public void onClick(View view){
         if (view.getId() == R.id.buttonverification) {
-            setResult(RESULT_OK);
-            finish();
-            /*
+
             vCode = findViewById(R.id.verification);
             hint = findViewById(R.id.signup_failhint);
             String codeEmail = getIntent().getStringExtra("code");
@@ -33,8 +31,7 @@ public class VerificationActivity extends Activity {
             else {
                 hint.setText("Wrong verification code");
             }
-
-             */
+            
         }
     }
 }
