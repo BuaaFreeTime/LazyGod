@@ -4,8 +4,49 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/task"
+
     >
+
+    <ImageView
+        android:id="@+id/applyimage"
+        android:layout_width="match_parent"
+
+        android:layout_height="200dp"
+        android:background="@drawable/logo"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/applytitle"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="25sp"
+        android:layout_below="@id/applyimage"
+        />
+
+    <TextView
+        android:id="@+id/applymoney"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="25sp"
+        android:layout_below="@id/applytitle"
+        />
+
+    <TextView
+        android:id="@+id/applynametime"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="25sp"
+        android:layout_below="@id/applymoney"
+        />
+
+    <TextView
+        android:id="@+id/applycontents"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="25sp"
+        android:layout_below="@id/applynametime"
+        android:layout_above="@+id/btnApply_Cancle"
+        />
 
     <Button
         android:id="@+id/btnApply_Cancle"
@@ -14,7 +55,7 @@
         android:background="@drawable/cancelbutton"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:onClick="onAddItemClick"/>
+        android:onClick="onClick"/>
 
     <Button
         android:id="@+id/btnApply_Apply"
@@ -23,6 +64,6 @@
         android:background="@drawable/applybutton"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:onClick="onAddItemClick"/>
+        android:onClick="onClick"/>
 
 </RelativeLayout>

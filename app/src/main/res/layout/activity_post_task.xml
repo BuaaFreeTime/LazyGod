@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/post">
+ >
 
     <Button
         android:id="@+id/btnPost_Cancle"
@@ -25,25 +25,9 @@
         android:layout_alignParentRight="true"
         android:onClick="onAddItemClick"/>
 
-    <Button
-        android:id="@+id/btnPost_back"
-        android:layout_width="53dp"
-        android:layout_height="44dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="3dp"
-        android:background="@drawable/backbutton"
-        android:onClick="onAddItemClick"/>
 
-    <ImageView
-        android:id="@+id/imgPost_addphoto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnPost_back"
-        android:layout_marginTop="2dp"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/addaphotobutton"
-         />
+
+
 
     <EditText
         android:id="@+id/editTextPost_Title"
@@ -51,7 +35,6 @@
         android:layout_marginRight="15dp"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:layout_below="@+id/imgPost_addphoto"
         android:layout_marginTop="5dp"
         android:background="#FFFFFF"
         android:ems="10"
@@ -74,64 +57,11 @@
         android:inputType="textMultiLine"
         android:textSize="14sp" />
 
-    <TextView
-        android:id="@+id/textViewPost_Category"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_below="@+id/editTextPost_Requirement"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="15dp"
-        android:background="#FFFFFF"
-        android:text="Category"
-        android:textColor="#FDC5C3C3"
-        android:textSize="20sp" />
-
-    <Spinner
-        android:id="@+id/spinnerPost_Category"
-        android:layout_width="212dp"
-        android:layout_height="30dp"
-        android:layout_below="@+id/editTextPost_Requirement"
-        android:layout_marginTop="15dp"
-        android:layout_alignRight="@+id/textViewPost_Category"
-        />
-
-
-
     <EditText
-        android:id="@+id/editTextPost_name"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Contact name"
-        android:textSize="14sp"
-        android:layout_below="@+id/editTextPost_address"
-        android:layout_marginTop="2dp"
-        android:background="#FFFFFF"
-        />
-
-    <EditText
-        android:id="@+id/editTextPost_phone"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_below="@+id/editTextPost_name"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginRight="15dp"
-        android:background="#FFFFFF"
-        android:ems="10"
-        android:hint="Contact number"
-        android:inputType="phone"
-        android:textSize="14sp" />
-
-    <TextView
         android:id="@+id/textViewPost_Reward"
         android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:layout_below="@+id/textViewPost_Category"
+        android:layout_below="@+id/editTextPost_Requirement"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
@@ -142,52 +72,22 @@
         />
 
     <EditText
-        android:id="@+id/editTextPost_amount"
-        android:layout_width="97dp"
-        android:layout_height="30dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Amount"
-        android:textSize="20sp"
-        android:layout_below="@+id/textViewPost_Category"
-        android:layout_marginTop="5dp"
-        android:layout_alignRight="@+id/textViewPost_Reward"
-        android:background="#FFFFFF"
-        />
-
-    <TextView
-        android:id="@+id/textViewPost_Location"
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:layout_below="@+id/textViewPost_Reward"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:text="Location&amp;Contact"
-        android:textColor="#FDC5C3C3"
-        android:textSize="16sp" />
-
-    <EditText
-        android:id="@+id/editTextPost_address"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:id="@+id/editTextPost_phone"
         android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:hint="Address"
-        android:layout_below="@+id/textViewPost_Location"
-        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textViewPost_Reward"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="15dp"
         android:background="#FFFFFF"
-         />
+        android:ems="10"
+        android:hint="Contact number"
+        android:inputType="phone"
+        android:textSize="14sp" />
 
-    <Button
-        android:id="@+id/btnPost_address"
-        android:layout_width="35dp"
-        android:layout_height="30dp"
-        android:background="@drawable/locationbutton"
-        android:layout_above="@+id/editTextPost_name"
-        android:layout_marginBottom="2dp"
-        android:layout_alignRight="@+id/editTextPost_address"
-        android:onClick="onAddItemClick"
-        />
+
+
+
+
 
     </RelativeLayout>

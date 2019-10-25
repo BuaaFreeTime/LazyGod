@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup">
+
+
+
+    <TextView
+        android:id="@+id/signup_failhint"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_above="@id/buttonverification"
+        android:layout_marginBottom="200dp"
+        android:layout_marginLeft="50dp"
+        />
+
+
+    <TextView
+        android:id="@+id/signup_hint"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:text="Your verification code has been sent to your email"
+        android:ems="10"
+        android:layout_above="@+id/verification"
+        android:layout_marginLeft="50dp"
+        />
+
+
+    <EditText
+        android:id="@+id/verification"
+        android:layout_width="305dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:shadowColor="#00FFFFFF"
+        android:textColor="@android:color/black"
+        android:hint="verification code"
+        android:layout_above="@+id/signup_failhint"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/signintext"
+        />
+
+
+
+    <Button
+        android:id="@+id/buttonverification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="verification"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:onClick="onClick"
+        />
+
+
+</RelativeLayout>

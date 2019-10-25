@@ -4,21 +4,56 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/task"
+
     >
 
     <ImageView
-        android:id="@+id/imageViewTask"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"/>
+        android:id="@+id/finishimage"
+        android:layout_width="match_parent"
+
+        android:layout_height="200dp"
+        android:background="@drawable/logo"
+        android:scaleType="fitCenter" />
 
     <TextView
-        android:id="@+id/textViewTask"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/imageViewTask"/>
+        android:id="@+id/finishtitle"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="25sp"
+        android:layout_below="@id/finishimage"
+        />
+
+    <TextView
+        android:id="@+id/finishmoney"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="25sp"
+        android:layout_below="@id/finishtitle"
+        />
+
+    <TextView
+        android:id="@+id/finishnametime"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="25sp"
+        android:layout_below="@id/finishmoney"
+        />
+
+
+    <TextView
+        android:id="@+id/finishphone"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/finishnametime"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/finishcontents"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_above="@+id/btnFinish_Cancle"
+        android:layout_below="@+id/finishphone"
+        android:textSize="25sp" />
 
 
 

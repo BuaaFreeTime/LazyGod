@@ -12,20 +12,13 @@
         android:ems="10"
         />
 
-    <Button
-        android:id="@+id/btnback"
-        android:layout_width="53dp"
-        android:layout_height="44dp"
-        android:background="@drawable/backbutton"
-        android:onClick="onAddItemClick"
-        android:horizontalSpacing="8dp"
-        android:verticalSpacing="8dp"/>
+
 
     <ImageButton
         android:id="@+id/imageBtnAddPhoto"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@drawable/addaphotobutton"
+        android:background="@drawable/face"
         android:layout_marginTop="70dp"
         android:layout_toLeftOf="@+id/textViewStudentname"
         android:layout_marginRight="15dp"
@@ -33,12 +26,32 @@
 
     <TextView
         android:id="@+id/textViewStudentname"
-        android:layout_width="130dp"
+        android:layout_width="150dp"
         android:layout_height="33dp"
         android:layout_marginTop="75dp"
         android:text="Student name"
         android:textSize="24sp"
         android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/mephone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Student phone"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/me"
+        />
+
+    <TextView
+        android:id="@+id/meemail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Student email"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/mephone"
         />
 
     <TextView
@@ -51,52 +64,6 @@
         android:layout_below="@id/textViewStudentname"
         android:layout_toRightOf="@id/imageBtnAddPhoto"/>
 
-
-    <Button
-        android:id="@+id/btnWallet"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_below="@+id/me"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="82dp"
-        android:background="@drawable/walletbutton"
-        android:onClick="onAddItemClick" />
-
-    <Button
-        android:id="@+id/btnDraft"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_below="@+id/me"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="68dp"
-        android:background="@drawable/draftsbutton"
-        android:onClick="onAddItemClick" />
-
-    <Button
-        android:id="@+id/btnLogout"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:onClick="onAddItemClick"
-        android:background="@drawable/logoutbutton"
-        android:layout_below="@id/btnAbout"/>
-
-    <Button
-        android:id="@+id/btnAbout"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:onClick="onAddItemClick"
-        android:background="@drawable/aboutbutton"
-        android:layout_below="@id/btnFeedback"/>
-
-    <Button
-        android:id="@+id/btnFeedback"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:onClick="onAddItemClick"
-        android:background="@drawable/feedbackbutton"
-        android:layout_below="@id/btnWallet"
-        android:layout_marginTop="20dp"
-        />
 
     <Button
         android:id="@+id/btnRunner2"

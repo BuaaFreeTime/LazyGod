@@ -19,6 +19,13 @@
         <activity android:name=".MeActivity"></activity>
         <activity android:name=".MeEditActivity"></activity>
         <activity android:name=".AppliedActivity"></activity>
+        <activity android:name=".SigninActivity"></activity>
+        <activity android:name=".SignupActivity"></activity>
+        <activity android:name=".VerificationActivity"></activity>
+        <activity android:name=".TaskapplyActivity"></activity>
+        <activity android:name=".PosttaskActivity"></activity>
+        <activity android:name=".SentActivity"></activity>
+        <activity android:name=".TaskfinishActivity"></activity>
     </application>
 
 </manifest>
