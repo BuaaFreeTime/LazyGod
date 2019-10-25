@@ -61,7 +61,7 @@ public class GridViewAdapter extends BaseAdapter {
             holder = (ViewHolder) convertView.getTag();
         }
 
-        holder.name.setText(taskList.get(position).getSender());
+        holder.name.setText(taskList.get(position).getName());
         holder.time.setText(taskList.get(position).getTime());
         holder.money.setText(taskList.get(position).getMoney());
         holder.title.setText(taskList.get(position).getTitle());

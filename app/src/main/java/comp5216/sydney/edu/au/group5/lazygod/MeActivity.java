@@ -31,7 +31,7 @@ public class MeActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_me);
         name = findViewById(R.id.textViewStudentname);
-        phone = findViewById(R.id.meemail);
+        phone = findViewById(R.id.mephone);
         email = findViewById(R.id.meemail);
 
         // read local data

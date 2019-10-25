@@ -41,7 +41,7 @@
         android:layout_below="@id/gridtitle"
         />
 
-    <com.google.android.gms.maps.MapView
+    <ImageView
         android:id="@+id/gridmap"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
