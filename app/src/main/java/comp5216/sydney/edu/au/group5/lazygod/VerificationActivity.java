@@ -31,7 +31,7 @@ public class VerificationActivity extends Activity {
             else {
                 hint.setText("Wrong verification code");
             }
-            
+
         }
     }
 }

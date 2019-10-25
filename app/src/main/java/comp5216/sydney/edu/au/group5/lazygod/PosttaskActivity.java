@@ -17,6 +17,7 @@ public class PosttaskActivity extends Activity {
 
     EditText title, contents, money, phone;
     String uuid;
+    String name;
 
     private FirebaseFirestore mFirestore;
 
@@ -26,6 +27,7 @@ public class PosttaskActivity extends Activity {
         setContentView(R.layout.activity_post_task);
 
         uuid = getIntent().getStringExtra("uuid");
+        name = getIntent().getStringExtra("name");
 
         mFirestore = FirebaseFirestore.getInstance();
     }
@@ -39,7 +41,7 @@ public class PosttaskActivity extends Activity {
 
             TaskInfo taskInfo = new TaskInfo(title.getText().toString(),
                     contents.getText().toString(), money.getText().toString(),
-                    phone.getText().toString(), new Date());
+                    phone.getText().toString(),name,  new Date());
             taskInfo.setSender(uuid);
 
             CollectionReference tasks = mFirestore.collection("tasks");

@@ -43,6 +43,7 @@ public class AppliedActivity extends Activity {
     private Query mQuery;
 
     private String uuid;
+    private String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +51,7 @@ public class AppliedActivity extends Activity {
         setContentView(R.layout.activity_my_task_applied);
 
         uuid = getIntent().getStringExtra("uuid");
+        name = getIntent().getStringExtra("name");
 
         taskList = new ArrayList<TaskInfo>();
 
@@ -156,6 +158,7 @@ public class AppliedActivity extends Activity {
             case R.id.btnApplied_Sent:
                 Intent intent = new Intent(AppliedActivity.this, SentActivity.class);
                 intent.putExtra("uuid", uuid);
+                intent.putExtra("name", name);
                 startActivity(intent);
                 finish();
                 break;

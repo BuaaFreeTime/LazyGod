@@ -55,6 +55,7 @@ public class MeActivity extends Activity {
             case R.id.btnTask2:
                 Intent intent = new Intent(MeActivity.this,AppliedActivity.class);
                 intent.putExtra("uuid", user.getUuid());
+                intent.putExtra("name", user.getNickName());
                 startActivity(intent);
                 finish();
                 break;

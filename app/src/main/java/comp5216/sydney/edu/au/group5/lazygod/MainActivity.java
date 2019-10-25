@@ -214,11 +214,13 @@ public class MainActivity extends Activity {
             case R.id.btnaddtask:
                 Intent intentAdd = new Intent(MainActivity.this, PosttaskActivity.class);
                 intentAdd.putExtra("uuid", user.getUuid());
+                intentAdd.putExtra("name",user. getNickName());
                 startActivity(intentAdd);
                 break;
             case R.id.btnTask:
                 Intent intentTask = new Intent(MainActivity.this, AppliedActivity.class);
                 intentTask.putExtra("uuid", user.getUuid());
+                intentTask.putExtra("name",user. getNickName());
                 startActivity(intentTask);
                 finish();
                 break;

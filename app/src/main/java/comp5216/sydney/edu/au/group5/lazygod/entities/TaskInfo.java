@@ -19,13 +19,14 @@ public class TaskInfo {
     String docid;
     String applyer = null;
 
-    public TaskInfo(String title, String contents, String money, String phone, Date date) {
+    public TaskInfo(String title, String contents, String money, String phone, String name, Date date) {
         this.title = title;
         this.contents = contents;
         this.phone = phone;
         SimpleDateFormat ft = new SimpleDateFormat("MM-dd-yyyy HH:mm:ss");
         this.time = ft.format(date);
         this.money = "A$" + money;
+        this.name = name;
     }
 
     public TaskInfo(Map<String, Object> map) {
@@ -35,6 +36,7 @@ public class TaskInfo {
         this.time = map.get("time").toString();
         this.money = map.get("money").toString();
         this.sender = map.get("sender").toString();
+        this.name = map.get("name").toString();
     }
 
     public void setSender(String sender) {
