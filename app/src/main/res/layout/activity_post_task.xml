@@ -65,7 +65,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:text="Reward              | AUD ($)"
+        android:hint="Reward              | AUD ($)"
         android:textColor="#FDC5C3C3"
         android:textSize="20sp"
         android:background="#FFFFFF"

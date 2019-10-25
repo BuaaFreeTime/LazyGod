@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
@@ -26,6 +27,7 @@ import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
 import comp5216.sydney.edu.au.group5.lazygod.entities.TaskInfo;
+import comp5216.sydney.edu.au.group5.lazygod.entities.UserInfo;
 import comp5216.sydney.edu.au.group5.lazygod.utils.GridViewAdapter;
 
 
@@ -73,7 +75,7 @@ public class AppliedActivity extends Activity {
         mFirestore = FirebaseFirestore.getInstance();
 
         // Get the 50 highest rated restaurants
-        mQuery = mFirestore.collection("tasks").whereEqualTo("sender", uuid)
+        mQuery = mFirestore.collection("tasks").whereEqualTo("applyer", uuid)
                 .orderBy("title", Query.Direction.DESCENDING)
                 .limit(LIMIT);
 
@@ -84,7 +86,9 @@ public class AppliedActivity extends Activity {
                 if (task.isSuccessful()) {
                     for (QueryDocumentSnapshot document : task.getResult()) {
                         Map<String, Object> map = document.getData();
-                        taskList.add(new TaskInfo(map.get("name").toString()));
+                        TaskInfo taskInfo = new TaskInfo(map);
+                        taskInfo.setDocid(document.getId());
+                        taskList.add(taskInfo);
                         taskAdapter.notifyDataSetChanged();
                     }
                 } else {
@@ -92,6 +96,26 @@ public class AppliedActivity extends Activity {
                 }
             }
         });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == 0) {
+            if (resultCode == RESULT_OK) {
+                int p = data.getIntExtra("position", 0);
+
+                String docid = data.getStringExtra("docid");
+                Log.w("xxxx", docid);
+
+                taskList.remove(p);
+                taskAdapter.notifyDataSetChanged();
+
+                CollectionReference apply = mFirestore.collection("tasks");
+
+                apply.document(docid).delete();
+
+            }
+        }
     }
 
 
@@ -111,7 +135,8 @@ public class AppliedActivity extends Activity {
                     intent.putExtra("time", taskInfo.getTime());
                     intent.putExtra("contents", taskInfo.getContents());
                     intent.putExtra("phone", taskInfo.getPhone());
-                    startActivity(intent);
+                    intent.putExtra("docid", taskInfo.getDocid());
+                    startActivityForResult(intent, 0);
                 }
             }
         });

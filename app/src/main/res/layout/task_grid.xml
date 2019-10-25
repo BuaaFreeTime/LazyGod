@@ -8,14 +8,12 @@
         android:id="@+id/gridname"
         android:layout_width="150dp"
         android:layout_height="40dp"
-        android:textSize="25sp"
          />
 
     <TextView
         android:id="@+id/gridtime"
         android:layout_width="150dp"
         android:layout_height="40dp"
-        android:textSize="25sp"
         android:layout_below="@id/gridname"
         />
 
@@ -23,7 +21,6 @@
         android:id="@+id/gridmoney"
         android:layout_width="150dp"
         android:layout_height="80dp"
-        android:textSize="25sp"
         android:layout_toEndOf="@id/gridname"
         android:layout_alignParentRight="true"
         android:gravity="center"
@@ -33,7 +30,6 @@
         android:id="@+id/gridtitle"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:textSize="25sp"
         android:layout_alignParentRight="true"
         android:layout_below="@id/gridmoney"
     />
@@ -42,7 +38,6 @@
         android:id="@+id/gridcontents"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:textSize="25sp"
         android:layout_below="@id/gridtitle"
         />
 

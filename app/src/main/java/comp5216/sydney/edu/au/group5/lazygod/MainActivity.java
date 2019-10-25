@@ -50,7 +50,7 @@ public class MainActivity extends Activity {
 
     // Define request code
     public final int SIGN_IN_CODE = 647;
-    public final int ADD_ITEM_REQUEST_CODE = 648;
+    public final int APPLY_CODE = 648;
 
     private static final int LIMIT = 50;
 
@@ -64,7 +64,7 @@ public class MainActivity extends Activity {
     UserDao userDao;
 
     private FirebaseFirestore mFirestore;
-    private Query mQuery;
+
 
 
     boolean flag = true;
@@ -89,11 +89,12 @@ public class MainActivity extends Activity {
         // check signin
         if (user.getUuid() == "initial") {
             Intent intent = new Intent(MainActivity.this, SigninActivity.class);
-            flag = false;
             startActivityForResult(intent, SIGN_IN_CODE);
         }
 
         FirebaseFirestore.setLoggingEnabled(true);
+
+        mFirestore = FirebaseFirestore.getInstance();
 
         taskList = new ArrayList<TaskInfo>();
 
@@ -115,7 +116,8 @@ public class MainActivity extends Activity {
     }
 
     private void initFirestore() throws ExecutionException, InterruptedException {
-        mFirestore = FirebaseFirestore.getInstance();
+
+        Query mQuery;
 
         // Get the 50 highest rated restaurants
         mQuery = mFirestore.collection("tasks").whereEqualTo("applyer", null)
@@ -129,8 +131,9 @@ public class MainActivity extends Activity {
                 if (task.isSuccessful()) {
                     for (QueryDocumentSnapshot document : task.getResult()) {
                         Map<String, Object> map = document.getData();
-                        Log.w("xxxx", map.get("name").toString());
-                        taskList.add(new TaskInfo(map.get("name").toString()));
+                        TaskInfo taskInfo = new TaskInfo(map);
+                        taskInfo.setDocid(document.getId());
+                        taskList.add(taskInfo);
                         taskAdapter.notifyDataSetChanged();
                     }
                 } else {
@@ -144,7 +147,6 @@ public class MainActivity extends Activity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == SIGN_IN_CODE) {
             if (resultCode == RESULT_OK) {
-                flag = true;
             }
             if (resultCode == RESULT_FIRST_USER) {
                 user = new UserInfo(data.getStringExtra("uuid"),
@@ -152,6 +154,24 @@ public class MainActivity extends Activity {
                                     data.getStringExtra("phone"));
 
                 saveUser();
+            }
+        }
+        if (requestCode == APPLY_CODE) {
+            if (resultCode == RESULT_OK) {
+                int p = data.getIntExtra("position", 0);
+
+                String docid = data.getStringExtra("docid");
+                Log.w("xxxx", docid);
+
+                taskList.get(p).setApplyer(user.getUuid());
+                taskAdapter.notifyDataSetChanged();
+
+                CollectionReference apply = mFirestore.collection("tasks");
+
+                apply.add(taskList.get(p));
+
+                apply.document(docid).delete();
+
             }
         }
     }
@@ -172,7 +192,10 @@ public class MainActivity extends Activity {
                     intent.putExtra("time", taskInfo.getTime());
                     intent.putExtra("contents", taskInfo.getContents());
                     intent.putExtra("phone", taskInfo.getPhone());
-                    startActivity(intent);
+                    intent.putExtra("position", position);
+                    intent.putExtra("docid",taskInfo.getDocid());
+                    Log.w("xxxx", "Error getting documents."+ taskInfo.getDocid());
+                    startActivityForResult(intent, APPLY_CODE);
                 }
             }
         });

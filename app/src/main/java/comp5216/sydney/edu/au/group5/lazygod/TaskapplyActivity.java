@@ -1,6 +1,7 @@
 package comp5216.sydney.edu.au.group5.lazygod;
 
 import android.app.Activity;
+import android.app.TaskInfo;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -30,6 +31,8 @@ public class TaskapplyActivity extends Activity {
     public void onClick(View view){
         if (view.getId() == R.id.btnApply_Apply) {
 
+            setResult(RESULT_OK, getIntent());
+            finish();
         }
         if (view.getId() == R.id.btnApply_Cancle) {
             finish();

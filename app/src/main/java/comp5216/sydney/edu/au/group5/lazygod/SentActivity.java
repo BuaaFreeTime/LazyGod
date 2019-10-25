@@ -80,7 +80,7 @@ public class SentActivity extends Activity {
                 if (task.isSuccessful()) {
                     for (QueryDocumentSnapshot document : task.getResult()) {
                         Map<String, Object> map = document.getData();
-                        taskList.add(new TaskInfo(map.get("name").toString()));
+                        taskList.add(new TaskInfo(map));
                         taskAdapter.notifyDataSetChanged();
                     }
                 } else {

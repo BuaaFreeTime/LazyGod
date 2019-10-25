@@ -8,6 +8,8 @@ import android.widget.EditText;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.util.Date;
+
 import comp5216.sydney.edu.au.group5.lazygod.entities.TaskInfo;
 
 
@@ -35,13 +37,16 @@ public class PosttaskActivity extends Activity {
             money = findViewById(R.id.textViewPost_Reward);
             phone = findViewById(R.id.editTextPost_phone);
 
-            TaskInfo taskInfo = new TaskInfo(title.getText().toString());
+            TaskInfo taskInfo = new TaskInfo(title.getText().toString(),
+                    contents.getText().toString(), money.getText().toString(),
+                    phone.getText().toString(), new Date());
+            taskInfo.setSender(uuid);
 
             CollectionReference tasks = mFirestore.collection("tasks");
             tasks.add(taskInfo);
-
+            finish();
         }
-        if (view.getId() == R.id.btnApply_Cancle) {
+        if (view.getId() == R.id.btnPost_Cancle) {
             finish();
         }
     }
