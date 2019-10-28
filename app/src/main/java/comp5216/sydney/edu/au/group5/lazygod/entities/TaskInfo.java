@@ -37,6 +37,7 @@ public class TaskInfo {
         this.money = map.get("money").toString();
         this.sender = map.get("sender").toString();
         this.name = map.get("name").toString();
+        if (map.get("applyer")!= null) this.applyer = map.get("applyer").toString();
     }
 
     public void setSender(String sender) {

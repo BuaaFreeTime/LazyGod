@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
@@ -82,7 +83,9 @@ public class SentActivity extends Activity {
                 if (task.isSuccessful()) {
                     for (QueryDocumentSnapshot document : task.getResult()) {
                         Map<String, Object> map = document.getData();
-                        taskList.add(new TaskInfo(map));
+                        TaskInfo taskInfo = new TaskInfo(map);
+                        taskInfo.setDocid(document.getId());
+                        taskList.add(taskInfo);
                         taskAdapter.notifyDataSetChanged();
                     }
                 } else {
@@ -102,16 +105,40 @@ public class SentActivity extends Activity {
                         PosttaskActivity.class);
                 TaskInfo taskInfo = (TaskInfo) taskAdapter.getItem(position);
                 if (intent != null) {
+                    intent.putExtra("uuid", uuid);
                     intent.putExtra("title", taskInfo.getTitle());
                     intent.putExtra("name", taskInfo.getName());
                     intent.putExtra("money", taskInfo.getMoney());
                     intent.putExtra("time", taskInfo.getTime());
                     intent.putExtra("contents", taskInfo.getContents());
                     intent.putExtra("phone", taskInfo.getPhone());
-                    startActivity(intent);
+                    intent.putExtra("docid", taskInfo.getDocid());
+                    intent.putExtra("applyer", taskInfo.getApplyer());
+                    intent.putExtra("position", position);
+                    startActivityForResult(intent, 1);
                 }
             }
         });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == 1) {
+            if (resultCode == RESULT_OK) {
+                int p = data.getIntExtra("position", 0);
+
+                String docid = data.getStringExtra("docid");
+                Log.w("xxxx", docid);
+
+                taskList.remove(p);
+                taskAdapter.notifyDataSetChanged();
+
+                CollectionReference apply = mFirestore.collection("tasks");
+
+                apply.document(docid).delete();
+
+            }
+        }
     }
 
     public void onAddItemClick(View view) {

@@ -43,9 +43,10 @@ public class PosttaskActivity extends Activity {
                     contents.getText().toString(), money.getText().toString(),
                     phone.getText().toString(),name,  new Date());
             taskInfo.setSender(uuid);
-
+            taskInfo.setApplyer(getIntent().getStringExtra("applyer"));
             CollectionReference tasks = mFirestore.collection("tasks");
             tasks.add(taskInfo);
+            setResult(RESULT_OK, getIntent());
             finish();
         }
         if (view.getId() == R.id.btnPost_Cancle) {

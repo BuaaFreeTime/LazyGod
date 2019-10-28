@@ -138,6 +138,7 @@ public class AppliedActivity extends Activity {
                     intent.putExtra("contents", taskInfo.getContents());
                     intent.putExtra("phone", taskInfo.getPhone());
                     intent.putExtra("docid", taskInfo.getDocid());
+                    intent.putExtra("position", position);
                     startActivityForResult(intent, 0);
                 }
             }
