@@ -29,6 +29,16 @@ public class PosttaskActivity extends Activity {
         uuid = getIntent().getStringExtra("uuid");
         name = getIntent().getStringExtra("name");
 
+        title = findViewById(R.id.editTextPost_Title);
+        contents = findViewById(R.id.editTextPost_Requirement);
+        money = findViewById(R.id.textViewPost_Reward);
+        phone = findViewById(R.id.editTextPost_phone);
+
+        title.setText(getIntent().getStringExtra("title"));
+        contents.setText(getIntent().getStringExtra("contents"));
+        money.setText(getIntent().getStringExtra("money"));
+        phone.setText(getIntent().getStringExtra("phone"));
+
         mFirestore = FirebaseFirestore.getInstance();
     }
 
